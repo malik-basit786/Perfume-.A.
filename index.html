@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfume</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Montserrat:wght@300;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <!-- timer set on top -->
+    <div class="sale-timer">
+        <span class="sale-text">12.12 Sale</span>
+        <div class="countdown">
+            <div class="time-box"><span id="days">02</span><small>Days</small></div>
+            <div class="time-box"><span id="hours">07</span><small>Hours</small></div>
+            <div class="time-box"><span id="minutes">15</span><small>Minutes</small></div>
+            <div class="time-box"><span id="seconds">40</span><small>Seconds</small></div>
+        </div>
+        <span class="live-text">Is Live Now</span>
+    </div>
+    <!-- start nav bar section  -->
+    <nav class="top-navbar">
+        <div class="search-container">
+            <input type="text" placeholder="Search fragrances...">
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+
+        <div class="perfumeshop-box">
+            <a href="perfume-shop.html"> <span>The Perfume Shop</span></a>
+        </div>
+
+        <div class="nav-icons">
+            <div class="icon-item">
+                <a href="contact.html"><i class="fa-solid fa-location-dot"></i>
+            </div></a>
+            <div class="icon-item">
+                <i class="fa-solid fa-euro-sign"></i>
+            </div>
+            <div class="icon-item">
+                <a href="sinup.html"><i class="fa-solid fa-user-plus"></i></a>
+            </div>
+            <div class="icon-item">
+                <a href="card.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+    </nav>
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="service.html">Services</a></li>
+                    <li><a href="blogs.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- hero section start  -->
+    <section class="hero">
+        <video class="img" autoplay muted loop playsinline poster="./Gemini_Generated_Image_g6flqjg6flqjg6fl.png">
+            <source src="img/Gemini_Generated_Image_g6flqjg6flqjg6fl.mp4.mp4" type="video/mp4">
+        </video>
+
+        <div class="hero-text">
+            <h1 class="stylish-title">
+                Unforgettable fragrance for unforgettable moments.
+            </h1>
+            <p class="stylish-subtitle">
+                Wear the confidence. Leave the impression.
+            </p>
+            <div class="line-animated"></div>
+            <a href="./sinup.html">
+                <button class="join-btn">
+                    JOIN US <span class="arrow">→</span>
+                </button>
+            </a>
+        </div>
+    </section>
+
+
+
+
+
+    <h2 class="saler">BEST <span id="typing-text"></span></h2>
+
+    <section class="card-container">
+
+        <div class="product-wrapper">
+
+            <div class="single-card">
+                <img src="img/img1.avif" alt="Perfume 1">
+                <div class="card-overlay">
+
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.webwatsapp.com/"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="product-info">
+
+                <p class="p-name">Luxury Oudh</p>
+                <p class="p-price">€45.00</p>
+            </div>
+
+        </div>
+
+        <div class="product-wrapper">
+            <div class="single-card">
+                <img src="img/img2.avif" alt="Perfume 2">
+                <div class="card-overlay">
+
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.webwatsapp.com/"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="product-info">
+                <p class="p-name">Royal Rose</p>
+                <p class="p-price">€50.00</p>
+            </div>
+        </div>
+
+        <div class="product-wrapper">
+            <div class="single-card">
+                <img src="img/img3.avif" alt="Perfume 3">
+                <div class="card-overlay">
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.webwatsapp.com/"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-info">
+                <p class="p-name">Night Jasmine</p>
+                <p class="p-price">€38.00</p>
+            </div>
+        </div>
+
+        <div class="product-wrapper">
+            <div class="single-card">
+                <img src="img/img4.avif" alt="Perfume 4">
+                <div class="card-overlay">
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.webwatsapp.com/"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-info">
+                <p class="p-name">Ocean Mist</p>
+                <p class="p-price">€42.00</p>
+            </div>
+        </div>
+
+        <div class="product-wrapper">
+            <div class="single-card">
+                <img src="img/img5.avif" alt="Perfume 5">
+                <div class="card-overlay">
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.webwatsapp.com/"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-info">
+                <p class="p-name">Amber Gold</p>
+                <p class="p-price">€55.00</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="view-all-container">
+        <a href="blogs.html"><button class="view-all-btn">View All Products</button></a>
+    </div>
+
+    <main class="zoom">
+        <div class="img-box">
+            <img src="img/Delicious_Bouqueti1.webp" alt="Bouquet">
+            <div class="overlay">
+                <h2>Delicious Bouquet</h2>
+            </div>
+        </div>
+
+        <div class="img-box">
+            <img src="img/Supremacy_Collectors2.webp" alt="Collectors">
+            <div class="overlay">
+                <h2>Supremacy Collector</h2>
+            </div>
+        </div>
+
+        <div class="img-box">
+            <img src="img/Souvenir_Blooming_Bliss3.webp" alt="Blooming">
+            <div class="overlay">
+                <h2>Blooming Bliss</h2>
+            </div>
+        </div>
+
+        <div class="img-box">
+            <img src="img/Historic_Sahara_4.webp" alt="Sahara">
+            <div class="overlay">
+                <h2>Historic Sahara</h2>
+            </div>
+        </div>
+    </main>
+
+
+
+
+
+
+    <h2 class="for-men">FOR MEN</h2>
+
+
+
+    <div class="slider-container">
+        <div class="card-wrapper">
+
+            <div class="card" data-link="bleu-de-chanel-men.html">
+                <div class="img-box">
+                    <img src="img/slider1.avif" alt="Bleu de Chanel">
+                    <div class="overlay"></div>
+                </div>
+                <div class="info-box">
+                    <h2>Bleu de Chanel</h2>
+                    <p class="price">$120.00</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="img-box">
+                    <img src="img/slider2.avif" alt="Dior Sauvage">
+                    <div class="overlay"></div>
+                </div>
+                <div class="info-box">
+                    <h2>Dior Sauvage</h2>
+                    <p class="price">$115.00</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="img-box">
+                    <img src="img/slider3.avif" alt="Creed Aventus">
+                    <div class="overlay"></div>
+                </div>
+                <div class="info-box">
+                    <h2>Creed Aventus</h2>
+                    <p class="price">$350.00</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="img-box">
+                    <img src="img/slider4.avif" alt="Giorgio Armani">
+                    <div class="overlay"></div>
+                </div>
+                <div class="info-box">
+                    <h2>Giorgio Armani</h2>
+                    <p class="price">$95.00</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="img-box">
+                    <img src="img/slider5.avif" alt="Tom Ford">
+                    <div class="overlay"></div>
+                </div>
+                <div class="info-box">
+                    <h2>Tom Ford Black</h2>
+                    <p class="price">$180.00</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="img-box">
+                    <img src="img/slider6.avif" alt="Versace Eros">
+                    <div class="overlay"></div>
+                </div>
+                <div class="info-box">
+                    <h2>Versace Eros</h2>
+                    <p class="price">$85.00</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="img-box">
+                    <img src="img/slider7.avif" alt="YSL La Nuit">
+                    <div class="overlay"></div>
+                </div>
+                <div class="info-box">
+                    <h2>YSL La Nuit</h2>
+                    <p class="price">$105.00</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="img-box">
+                    <img src="img/slider8.avif" alt="Baccarat Rouge">
+                    <div class="overlay"></div>
+                </div>
+                <div class="info-box">
+                    <h2>Baccarat Rouge</h2>
+                    <p class="price">$325.00</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="btn-container">
+        <a href="blogs.html" class="explore-btn">
+            Explore More
+            <span class="arrow">→</span>
+        </a>
+    </div>
+
+
+
+
+    <div class="hero-section">
+        <img src="img/ChatGPT Image Jan 15, 2026, 04_11_23 PM.png" alt="Main Look" class="full-img">
+
+    </div>
+
+
+    <div class="floating-social">
+        <a href="https://www.youtube.com/" class="social-icon youtube"><i class="fab fa-youtube"></i></a>
+        <a href="https://www.instagram.com/" class="social-icon instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/" class="social-icon linkedin"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://www.facebook.com/" class="social-icon facebook"><i class="fab fa-facebook-f"></i></a>
+    </div>
+
+
+
+
+
+
+    <h2 class="for-women">FOR WOMEN</h2>
+
+    <div class="slider-container">
+        <div class="card-wrapper">
+
+            <div class="card" data-link="bleu-de-chanel-women.html">
+                <div class="img-box">
+                    <img src="img/w1.avif" alt="Bleu de Chanel">
+                    <div class="overlay"></div>
+                </div>
+                <div class="info-box">
+                    <h2>Bleu de Chanel</h2>
+                    <p class="price">$120.00</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="img-box">
+                    <img src="img/w2.avif" alt="Dior Sauvage">
+                    <div class="overlay"></div>
+                </div>
+                <div class="info-box">
+                    <h2>Dior Sauvage</h2>
+                    <p class="price">$115.00</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="img-box">
+                    <img src="img/w3.avif" alt="Creed Aventus">
+                    <div class="overlay"></div>
+                </div>
+                <div class="info-box">
+                    <h2>Creed Aventus</h2>
+                    <p class="price">$350.00</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="img-box">
+                    <img src="img/w4.avif" alt="Giorgio Armani">
+                    <div class="overlay"></div>
+                </div>
+                <div class="info-box">
+                    <h2>Giorgio Armani</h2>
+                    <p class="price">$95.00</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="img-box">
+                    <img src="img/w5.avif" alt="Tom Ford">
+                    <div class="overlay"></div>
+                </div>
+                <div class="info-box">
+                    <h2>Tom Ford Black</h2>
+                    <p class="price">$180.00</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="img-box">
+                    <img src="img/w6.avif" alt="Versace Eros">
+                    <div class="overlay"></div>
+                </div>
+                <div class="info-box">
+                    <h2>Versace Eros</h2>
+                    <p class="price">$85.00</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="img-box">
+                    <img src="img/w7.avif" alt="YSL La Nuit">
+                    <div class="overlay"></div>
+                </div>
+                <div class="info-box">
+                    <h2>YSL La Nuit</h2>
+                    <p class="price">$105.00</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="img-box">
+                    <img src="img/w8.avif" alt="Baccarat Rouge">
+                    <div class="overlay"></div>
+                </div>
+                <div class="info-box">
+                    <h2>Baccarat Rouge</h2>
+                    <p class="price">$325.00</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="btn-container">
+        <a href="#" class="explore-btn">
+            Explore More
+            <span class="arrow">→</span>
+        </a>
+    </div>
+    <h2 class="looks">OUR LOOKS</h2>
+    <div class="afnan-container">
+        <div class="main-look">
+            <img src="img/looks.png" alt="Main Look">
+        </div>
+
+        <div class="product-card">
+            <div class="img-wrapper">
+                <img src="img/afnan.webp" alt="Afnan Perfume">
+                <div class="plus-icon">+</div>
+            </div>
+
+            <div class="product-info">
+                <p class="price">$85.00</p>
+                <button class="view-btn">View Product</button>
+            </div>
+        </div>
+    </div>
+
+    <h3 class="world">World of Captivating Fragrances</h3>
+    <h1 class="collection">Discover Our Exquisite Collection
+    </h1>
+    <div class="full-screen-wrapper">
+        <div class="cards-grid">
+            <div class="custom-card">
+                <div class="card-img-box">
+                    <img src="img/img1.avif" alt="Product 1">
+                    <div class="hover-text">Premium Scent</div>
+                </div>
+                <button class="bottom-view-btn">View Product</button>
+            </div>
+
+            <div class="custom-card">
+                <div class="card-img-box">
+                    <img src="img/img2.avif" alt="Product 2">
+                    <div class="hover-text">Luxury Edition</div>
+                </div>
+                <button class="bottom-view-btn">View Product</button>
+            </div>
+
+            <div class="custom-card">
+                <div class="card-img-box">
+                    <img src="img/img3.avif" alt="Product 3">
+                    <div class="hover-text">Classic Gold</div>
+                </div>
+                <button class="bottom-view-btn">View Product</button>
+            </div>
+
+            <div class="custom-card">
+                <div class="card-img-box">
+                    <img src="img/img4.avif" alt="Product 4">
+                    <div class="hover-text">Midnight Blue</div>
+                </div>
+                <button class="bottom-view-btn">View Product</button>
+            </div>
+
+            <div class="custom-card">
+                <div class="card-img-box">
+                    <img src="img/img5.avif" alt="Product 5">
+                    <div class="hover-text">Ocean Fresh</div>
+                </div>
+                <button class="bottom-view-btn">View Product</button>
+            </div>
+        </div>
+    </div>
+    <h4 class="online">WHEN YOU BUY ONLINE
+    </h4>
+    <h1 class="service">Our services
+    </h1>
+
+    <div class="feature-section">
+        <div class="feature-container">
+            <div class="feature-item">
+                <i class="fa-solid fa-vial"></i>
+                <h3>COMPLIMENTARY SAMPLES</h3>
+            </div>
+
+            <div class="feature-item">
+                <i class="fa-solid fa-shield-halved"></i>
+                <h3>SECURE PAYMENTS</h3>
+            </div>
+
+            <div class="feature-item">
+                <i class="fa-solid fa-headset"></i>
+                <h3>CUSTOMER SERVICE</h3>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <footer class="footer">
+        <div class="footer-container">
+
+            <!-- Logo + Newsletter -->
+            <div class="footer-col">
+                <h2 class="logo">.A</h2>
+
+                <h4>NEWSLETTER</h4>
+                <p>Subscribe to receive updates, access to exclusive deals, and more.</p>
+
+                <div class="newsletter">
+                    <input type="email" placeholder="E-mail">
+                    <button>SUBSCRIBE</button>
+                </div>
+            </div>
+
+            <!-- Find Out More -->
+            <div class="footer-col">
+                <h4>FIND OUT MORE</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="blogs.html">Blogs</a></li>
+                    <li><a href="service.html">Service</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            </div>
+
+            <!-- Policies -->
+            <div class="footer-col">
+                <h4>POLICIES</h4>
+                <ul>
+                    <li><a href="policy.html">Privacy Policy</a></li>
+                    <li><a href="policy.html">Refund Policy</a></li>
+                    <li><a href="policy.html">Shipping Policy</a></li>
+                    <li><a href="policy.html">Terms of Service</a></li>
+                </ul>
+            </div>
+
+            <!-- Social -->
+            <div class="footer-col">
+                <h4>FOLLOW US</h4>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.webwatsapp.com/"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            © 2026 - .A Pakistan
+        </div>
+    </footer>
+
+    <div class="floating-social">
+        <a href="https://www.youtube.com/" class="social-icon youtube"><i class="fab fa-youtube"></i></a>
+        <a href="https://www.instagram.com/" class="social-icon instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/" class="social-icon linkedin"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://www.facebook.com/" class="social-icon facebook"><i class="fab fa-facebook-f"></i></a>
+    </div>
+
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        // Typing Animation Setup
+        var typed = new Typed('#typing-text', {
+            strings: ['SELLER', 'COLLECTION', 'PERFUMES'],
+            typeSpeed: 80,
+            backSpeed: 50,
+            loop: true,
+            cursorChar: '_',
+        });
+    </script>
+
+    <script src="./app.js"></script>
+    <script>
+        document.querySelectorAll(".product-wrapper").forEach(card => {
+            card.addEventListener("click", () => {
+                window.location.href = "details.html";
+            });
+        });
+    </script>
+    <script>
+        // Ye select karega saare cards jo class "custom-card" ke andar hain
+        document.querySelectorAll(".custom-card").forEach(card => {
+            card.addEventListener("click", () => {
+                // Card pe click hone par ye page open karega
+                window.location.href = "details.html"; // yahan apna product page link de do
+            });
+        });
+    </script>
+    <script>
+        // Men aur Women dono sliders ke cards select karo
+        document.querySelectorAll(".card").forEach(card => {
+            card.addEventListener("click", () => {
+                // Yahan pe apna details page ka link daalo
+                window.location.href = "details.html";
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>

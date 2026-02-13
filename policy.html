@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perfume</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Montserrat:wght@300;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <!-- timer set on top -->
+  <div class="sale-timer">
+    <span class="sale-text">12.12 Sale</span>
+    <div class="countdown">
+      <div class="time-box"><span id="days">02</span><small>Days</small></div>
+      <div class="time-box"><span id="hours">07</span><small>Hours</small></div>
+      <div class="time-box"><span id="minutes">15</span><small>Minutes</small></div>
+      <div class="time-box"><span id="seconds">40</span><small>Seconds</small></div>
+    </div>
+    <span class="live-text">Is Live Now</span>
+  </div>
+
+  <nav class="top-navbar">
+    <div class="search-container">
+      <input type="text" placeholder="Search fragrances...">
+      <button><i class="fa-solid fa-magnifying-glass"></i></button>
+    </div>
+
+    <div class="perfumeshop-box">
+      <a href="perfume-shop.html"> <span>The Perfume Shop</span></a>
+    </div>
+
+    <div class="nav-icons">
+      <div class="icon-item">
+        <a href="contact.html"><i class="fa-solid fa-location-dot"></i>
+      </div></a>
+      <div class="icon-item">
+        <i class="fa-solid fa-euro-sign"></i>
+      </div>
+      <div class="icon-item">
+        <a href="sinup.html"><i class="fa-solid fa-user-plus"></i></a>
+      </div>
+      <div class="icon-item">
+        <a href="card.html"><i class="fa-solid fa-cart-shopping"></i></a>
+      </div>
+  </nav>
+
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="service.html">Services</a></li>
+          <li><a href="blogs.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
+
+
+
+  <main class="policy-container">
+    <header class="policy-hero">
+      <h1>Our Policies</h1>
+      <p>Please read our terms and conditions carefully to ensure a smooth shopping experience.</p>
+    </header>
+
+    <section class="policy-card">
+      <h2><span class="icon">🔒</span> Privacy Policy</h2>
+      <p>At our Perfume Boutique, we value your privacy. We collect your name, contact details, and shipping address
+        solely to process your orders and provide a personalized fragrance experience.</p>
+      <ul>
+        <li>We do not sell your data to third parties.</li>
+        <li>Your payment details are encrypted and secure.</li>
+        <li>Cookies are used to improve your browsing experience.</li>
+      </ul>
+    </section>
+
+    <section class="policy-card">
+      <h2><span class="icon">🔄</span> Refund Policy</h2>
+      <p>Due to the hygiene nature of fragrances, we have a specific return policy:</p>
+      <ul>
+        <li>Returns are accepted within 7 days if the perfume bottle is <strong>unopened</strong> and in its original
+          plastic wrap.</li>
+        <li>If you receive a damaged or broken bottle, please contact us immediately with a photo for a replacement.
+        </li>
+        <li>Sample sets and discovery kits are non-refundable.</li>
+      </ul>
+    </section>
+
+    <section class="policy-card">
+      <h2><span class="icon">🚚</span> Shipping Policy</h2>
+      <p>We deliver our signature scents with extreme care to ensure they reach you safely.</p>
+      <ul>
+        <li><strong>Processing Time:</strong> 1-2 business days.</li>
+        <li><strong>Delivery:</strong> Standard shipping takes 3-5 business days.</li>
+        <li><strong>Packaging:</strong> All perfumes are packed in shock-proof materials to prevent leakage or breakage.
+        </li>
+        <li>Tracking numbers will be provided via email once dispatched.</li>
+      </ul>
+    </section>
+
+    <section class="policy-card">
+      <h2><span class="icon">📜</span> Terms of Service</h2>
+      <p>By using our website, you agree to comply with our service terms:</p>
+      <ul>
+        <li>Prices for our perfumes are subject to change without notice.</li>
+        <li>Fragrance descriptions are provided for guidance; however, scent perception can vary per individual.</li>
+        <li>We reserve the right to refuse service or cancel orders in case of suspected fraud.</li>
+      </ul>
+    </section>
+  </main>
+
+
+
+
+
+  <footer class="footer">
+    <div class="footer-container">
+
+      <!-- Logo + Newsletter -->
+      <div class="footer-col">
+        <h2 class="logo">.A</h2>
+
+        <h4>NEWSLETTER</h4>
+        <p>Subscribe to receive updates, access to exclusive deals, and more.</p>
+
+        <div class="newsletter">
+          <input type="email" placeholder="E-mail">
+          <button>SUBSCRIBE</button>
+        </div>
+      </div>
+
+      <!-- Find Out More -->
+      <div class="footer-col">
+        <h4>FIND OUT MORE</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="blogs.html">Blogs</a></li>
+          <li><a href="service.html">Service</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+      </div>
+
+      <!-- Policies -->
+      <div class="footer-col">
+        <h4>POLICIES</h4>
+        <ul>
+          <li><a href="policy.html">Privacy Policy</a></li>
+          <li><a href="policy.html">Refund Policy</a></li>
+          <li><a href="policy.html">Shipping Policy</a></li>
+          <li><a href="policy.html">Terms of Service</a></li>
+        </ul>
+      </div>
+
+      <!-- Social -->
+      <div class="footer-col">
+        <h4>FOLLOW US</h4>
+        <div class="social-icons">
+          <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://www.webwatsapp.com/"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      © 2026 - .A Pakistan
+    </div>
+  </footer>
+
+  <div class="floating-social">
+    <a href="https://www.youtube.com/" class="social-icon youtube"><i class="fab fa-youtube"></i></a>
+    <a href="https://www.instagram.com/" class="social-icon instagram"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.linkedin.com/" class="social-icon linkedin"><i class="fab fa-linkedin-in"></i></a>
+    <a href="https://www.facebook.com/" class="social-icon facebook"><i class="fab fa-facebook-f"></i></a>
+  </div>
+
+
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script>
+    // Typing Animation Setup
+    var typed = new Typed('#typing-text', {
+      strings: ['SELLER', 'COLLECTION', 'PERFUMES'],
+      typeSpeed: 80,
+      backSpeed: 50,
+      loop: true,
+      cursorChar: '_',
+    });
+  </script>
+
+  <script src="./app.js"></script>
+  <script>
+    document.querySelectorAll(".product-wrapper").forEach(card => {
+      card.addEventListener("click", () => {
+        window.location.href = "details.html";
+      });
+    });
+  </script>
+  <script>
+    // Ye select karega saare cards jo class "custom-card" ke andar hain
+    document.querySelectorAll(".custom-card").forEach(card => {
+      card.addEventListener("click", () => {
+        // Card pe click hone par ye page open karega
+        window.location.href = "details.html"; // yahan apna product page link de do
+      });
+    });
+  </script>
+  <script>
+    // Men aur Women dono sliders ke cards select karo
+    document.querySelectorAll(".card").forEach(card => {
+      card.addEventListener("click", () => {
+        // Yahan pe apna details page ka link daalo
+        window.location.href = "details.html";
+      });
+    });
+  </script>
+
+
+</body>
+
+</html>

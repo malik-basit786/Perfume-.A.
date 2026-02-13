@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfume</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Montserrat:wght@300;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <!-- timer set on top -->
+    <div class="sale-timer">
+        <span class="sale-text">12.12 Sale</span>
+        <div class="countdown">
+            <div class="time-box"><span id="days">02</span><small>Days</small></div>
+            <div class="time-box"><span id="hours">07</span><small>Hours</small></div>
+            <div class="time-box"><span id="minutes">15</span><small>Minutes</small></div>
+            <div class="time-box"><span id="seconds">40</span><small>Seconds</small></div>
+        </div>
+        <span class="live-text">Is Live Now</span>
+    </div>
+
+    <nav class="top-navbar">
+        <div class="search-container">
+            <input type="text" placeholder="Search fragrances...">
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+
+       <div class="perfumeshop-box">
+            <a href="perfume-shop.html"> <span>The Perfume Shop</span></a>
+        </div>
+
+        <div class="nav-icons">
+            <div class="icon-item">
+                <a href="contact.html"><i class="fa-solid fa-location-dot"></i>
+            </div></a>
+            <div class="icon-item">
+                <i class="fa-solid fa-euro-sign"></i>
+            </div>
+            <div class="icon-item">
+                <a href="sinup.html"><i class="fa-solid fa-user-plus"></i></a>
+            </div>
+            <div class="icon-item">
+    <a href="card.html"><i class="fa-solid fa-cart-shopping"></i></a>
+</div>
+    </nav>
+<nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="service.html">Services</a></li>
+                    <li><a href="blogs.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+  
+    <h2 class="saler">BEST <span id="typing-text"></span></h2>
+
+    <section class="card-container">
+        <div class="product-wrapper">
+            <div class="single-card">
+                <img src="img/img1.avif" alt="Perfume 1">
+                <div class="card-overlay">
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.webwatsapp.com/"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-info">
+                <p class="p-name">Luxury Oudh</p>
+                <p class="p-price">€45.00</p>
+            </div>
+        </div>
+
+        <div class="product-wrapper">
+            <div class="single-card">
+                <img src="img/img2.avif" alt="Perfume 2">
+                <div class="card-overlay">
+                    <div class="social-icons">
+                      <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.webwatsapp.com/"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-info">
+                <p class="p-name">Royal Rose</p>
+                <p class="p-price">€50.00</p>
+            </div>
+        </div>
+
+        <div class="product-wrapper">
+            <div class="single-card">
+                <img src="img/img3.avif" alt="Perfume 3">
+                <div class="card-overlay">
+                    <div class="social-icons">
+                      <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.webwatsapp.com/"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-info">
+                <p class="p-name">Night Jasmine</p>
+                <p class="p-price">€38.00</p>
+            </div>
+        </div>
+
+        <div class="product-wrapper">
+            <div class="single-card">
+                <img src="img/img4.avif" alt="Perfume 4">
+                <div class="card-overlay">
+                    <div class="social-icons">
+                      <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.webwatsapp.com/"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-info">
+                <p class="p-name">Ocean Mist</p>
+                <p class="p-price">€42.00</p>
+            </div>
+        </div>
+
+        <div class="product-wrapper">
+            <div class="single-card">
+                <img src="img/img5.avif" alt="Perfume 5">
+                <div class="card-overlay">
+                    <div class="social-icons">
+                     <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.webwatsapp.com/"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-info">
+                <p class="p-name">Amber Gold</p>
+                <p class="p-price">€55.00</p>
+            </div>
+        </div>
+        
+
+
+
+
+        
+    </section>
+    
+    <section class="card-container">
+        <div class="product-wrapper">
+            <div class="single-card">
+                <img src="img/img1.avif" alt="Perfume 1">
+                <div class="card-overlay">
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.webwatsapp.com/"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-info">
+                <p class="p-name">Luxury Oudh</p>
+                <p class="p-price">€45.00</p>
+            </div>
+        </div>
+
+        <div class="product-wrapper">
+            <div class="single-card">
+                <img src="img/img2.avif" alt="Perfume 2">
+                <div class="card-overlay">
+                    <div class="social-icons">
+                      <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.webwatsapp.com/"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-info">
+                <p class="p-name">Royal Rose</p>
+                <p class="p-price">€50.00</p>
+            </div>
+        </div>
+
+        <div class="product-wrapper">
+            <div class="single-card">
+                <img src="img/img3.avif" alt="Perfume 3">
+                <div class="card-overlay">
+                    <div class="social-icons">
+                      <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.webwatsapp.com/"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-info">
+                <p class="p-name">Night Jasmine</p>
+                <p class="p-price">€38.00</p>
+            </div>
+        </div>
+
+        <div class="product-wrapper">
+            <div class="single-card">
+                <img src="img/img4.avif" alt="Perfume 4">
+                <div class="card-overlay">
+                    <div class="social-icons">
+                      <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.webwatsapp.com/"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-info">
+                <p class="p-name">Ocean Mist</p>
+                <p class="p-price">€42.00</p>
+            </div>
+        </div>
+
+        <div class="product-wrapper">
+            <div class="single-card">
+                <img src="img/img5.avif" alt="Perfume 5">
+                <div class="card-overlay">
+                    <div class="social-icons">
+                     <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.webwatsapp.com/"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-info">
+                <p class="p-name">Amber Gold</p>
+                <p class="p-price">€55.00</p>
+            </div>
+        </div>
+        
+</section>
+  <section class="card-container">
+        <div class="product-wrapper">
+            <div class="single-card">
+                <img src="img/img1.avif" alt="Perfume 1">
+                <div class="card-overlay">
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.webwatsapp.com/"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-info">
+                <p class="p-name">Luxury Oudh</p>
+                <p class="p-price">€45.00</p>
+            </div>
+        </div>
+
+        <div class="product-wrapper">
+            <div class="single-card">
+                <img src="img/img2.avif" alt="Perfume 2">
+                <div class="card-overlay">
+                    <div class="social-icons">
+                      <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.webwatsapp.com/"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-info">
+                <p class="p-name">Royal Rose</p>
+                <p class="p-price">€50.00</p>
+            </div>
+        </div>
+
+        <div class="product-wrapper">
+            <div class="single-card">
+                <img src="img/img3.avif" alt="Perfume 3">
+                <div class="card-overlay">
+                    <div class="social-icons">
+                      <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.webwatsapp.com/"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-info">
+                <p class="p-name">Night Jasmine</p>
+                <p class="p-price">€38.00</p>
+            </div>
+        </div>
+
+        <div class="product-wrapper">
+            <div class="single-card">
+                <img src="img/img4.avif" alt="Perfume 4">
+                <div class="card-overlay">
+                    <div class="social-icons">
+                      <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.webwatsapp.com/"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-info">
+                <p class="p-name">Ocean Mist</p>
+                <p class="p-price">€42.00</p>
+            </div>
+        </div>
+
+        <div class="product-wrapper">
+            <div class="single-card">
+                <img src="img/img5.avif" alt="Perfume 5">
+                <div class="card-overlay">
+                    <div class="social-icons">
+                     <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.webwatsapp.com/"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-info">
+                <p class="p-name">Amber Gold</p>
+                <p class="p-price">€55.00</p>
+            </div>
+        </div>
+        </section>
+         <div class="view-all-container">
+       <a href="./details.html"><button class="view-all-btn">Shop Now</button></a> 
+    </div>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        // Typing Animation Setup
+        var typed = new Typed('#typing-text', {
+            strings: ['SELLER', 'COLLECTION', 'PERFUMES'],
+            typeSpeed: 80,
+            backSpeed: 50,
+            loop: true,
+            cursorChar: '_',
+        });
+    </script>
+
+    <script src="./app.js"></script>  <script>
+  document.querySelectorAll(".product-wrapper").forEach(card => {
+    card.addEventListener("click", () => {
+      window.location.href = "details.html";
+    });
+  });
+</script>
+
+</body>
+</html>

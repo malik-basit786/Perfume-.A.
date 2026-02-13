@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfume</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Montserrat:wght@300;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <!-- timer set on top -->
+    <div class="sale-timer">
+        <span class="sale-text">12.12 Sale</span>
+        <div class="countdown">
+            <div class="time-box"><span id="days">02</span><small>Days</small></div>
+            <div class="time-box"><span id="hours">07</span><small>Hours</small></div>
+            <div class="time-box"><span id="minutes">15</span><small>Minutes</small></div>
+            <div class="time-box"><span id="seconds">40</span><small>Seconds</small></div>
+        </div>
+        <span class="live-text">Is Live Now</span>
+    </div>
+
+    <nav class="top-navbar">
+        <div class="search-container">
+            <input type="text" placeholder="Search fragrances...">
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+
+        <div class="perfumeshop-box">
+            <a href="perfume-shop.html"> <span>The Perfume Shop</span></a>
+        </div>
+
+        <div class="nav-icons">
+            <div class="icon-item">
+                <a href="contact.html"><i class="fa-solid fa-location-dot"></i>
+            </div></a>
+            <div class="icon-item">
+                <i class="fa-solid fa-euro-sign"></i>
+            </div>
+            <div class="icon-item">
+                <a href="sinup.html"><i class="fa-solid fa-user-plus"></i></a>
+            </div>
+            <div class="icon-item">
+    <a href="card.html"><i class="fa-solid fa-cart-shopping"></i></a>
+</div>
+    </nav>
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="service.html">Services</a></li>
+                    <li><a href="blogs.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+  <style>
+    /* CSS directly in page for professional handling */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    body {
+      background-color: #f8f8f8;
+      color: #333;
+    }
+
+    .cart-container {
+      max-width: 1200px;
+      margin: 50px auto;
+      padding: 20px;
+      display: flex;
+      gap: 40px;
+    }
+
+    /* Left Side: Cart Items */
+    .cart-items {
+      flex: 2;
+      background: white;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    }
+
+    .cart-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 20px;
+      margin-bottom: 20px;
+    }
+
+    .cart-header h1 {
+      font-family: 'Playfair Display', serif;
+      color: #064232;
+      font-size: 2rem;
+    }
+
+    .item-row {
+      display: grid;
+      grid-template-columns: 100px 2fr 1fr 1fr 40px;
+      align-items: center;
+      gap: 20px;
+      padding: 20px 0;
+      border-bottom: 1px solid #f1f1f1;
+    }
+
+    .item-img {
+      width: 100px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 4px;
+    }
+
+    .item-info h3 {
+      font-size: 1.1rem;
+      color: #064232;
+      margin-bottom: 5px;
+    }
+
+    .item-info p {
+      font-size: 0.85rem;
+      color: #777;
+    }
+
+    .quantity-control {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      border: 1px solid #ddd;
+      width: fit-content;
+      padding: 5px 10px;
+      border-radius: 4px;
+    }
+
+    .quantity-control button {
+      border: none;
+      background: none;
+      cursor: pointer;
+      font-size: 1.2rem;
+      color: #064232;
+    }
+
+    .quantity-control input {
+      width: 30px;
+      text-align: center;
+      border: none;
+      outline: none;
+    }
+
+    .item-price {
+      font-weight: 600;
+      color: #333;
+    }
+
+    .remove-btn {
+      color: #cc0000;
+      cursor: pointer;
+      font-size: 1.1rem;
+      transition: 0.3s;
+    }
+
+    .remove-btn:hover {
+      transform: scale(1.2);
+    }
+
+    /* Right Side: Summary */
+    .cart-summary {
+      flex: 1;
+      background: #064232;
+      color: white;
+      padding: 40px;
+      border-radius: 8px;
+      height: fit-content;
+      position: sticky;
+      top: 20px;
+    }
+
+    .summary-header {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+      padding-bottom: 20px;
+      margin-bottom: 20px;
+    }
+
+    .summary-row {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 15px;
+      font-size: 1rem;
+      opacity: 0.9;
+    }
+
+    .total-row {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+      padding-top: 20px;
+      border-top: 1px solid rgba(255, 255, 255, 0.2);
+      font-size: 1.4rem;
+      font-weight: bold;
+    }
+
+    .checkout-btn {
+      width: 100%;
+      background: white;
+      color: #064232;
+      border: none;
+      padding: 18px;
+      margin-top: 30px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      cursor: pointer;
+      transition: 0.4s;
+    }
+
+    .checkout-btn:hover {
+      background: #f1f1f1;
+      transform: translateY(-3px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .continue-link {
+      display: block;
+      text-align: center;
+      margin-top: 20px;
+      color: rgba(255, 255, 255, 0.7);
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
+
+    .continue-link:hover {
+      color: white;
+      text-decoration: underline;
+    }
+
+    /* Responsive */
+    @media (max-width: 900px) {
+      .cart-container {
+        flex-direction: column;
+      }
+
+      .cart-summary {
+        position: static;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="cart-container">
+    <div class="cart-items">
+      <div class="cart-header">
+        <h1>Shopping Bag</h1>
+        <span>3 Items</span>
+      </div>
+
+      <div class="item-row">
+        <img src="https://images.unsplash.com/photo-1541643600914-78b084683601?q=80&w=200" alt="Perfume"
+          class="item-img">
+        <div class="item-info">
+          <h3>Luxury Oudh Edition</h3>
+          <p>Size: 100ml</p>
+        </div>
+        <div class="quantity-control">
+          <button>-</button>
+          <input type="text" value="1" readonly>
+          <button>+</button>
+        </div>
+        <div class="item-price">€120.00</div>
+        <div class="remove-btn"><i class="fa-regular fa-trash-can"></i></div>
+      </div>
+
+      <div class="item-row">
+        <img src="https://images.unsplash.com/photo-1594035910387-fea47794261f?q=80&w=200" alt="Perfume"
+          class="item-img">
+        <div class="item-info">
+          <h3>Royal Rose Bloom</h3>
+          <p>Size: 50ml</p>
+        </div>
+        <div class="quantity-control">
+          <button>-</button>
+          <input type="text" value="1" readonly>
+          <button>+</button>
+        </div>
+        <div class="item-price">€85.00</div>
+        <div class="remove-btn"><i class="fa-regular fa-trash-can"></i></div>
+      </div>
+    </div>
+
+    <div class="cart-summary">
+      <div class="summary-header">
+        <h2>Order Summary</h2>
+      </div>
+      <div class="summary-row">
+        <span>Subtotal</span>
+        <span>€205.00</span>
+      </div>
+      <div class="summary-row">
+        <span>Shipping</span>
+        <span>€15.00</span>
+      </div>
+      <div class="summary-row">
+        <span>Taxes (VAT)</span>
+        <span>€0.00</span>
+      </div>
+      <div class="total-row">
+        <span>Total</span>
+        <span>€220.00</span>
+      </div>
+
+      <button class="checkout-btn">Secure Checkout</button>
+      <a href="index.html" class="continue-link">Continue Shopping</a>
+    </div>
+  </div>
+  
+
+    <footer class="footer">
+        <div class="footer-container">
+
+            <!-- Logo + Newsletter -->
+            <div class="footer-col">
+                <h2 class="logo">.A</h2>
+
+                <h4>NEWSLETTER</h4>
+                <p>Subscribe to receive updates, access to exclusive deals, and more.</p>
+
+                <div class="newsletter">
+                    <input type="email" placeholder="E-mail">
+                    <button>SUBSCRIBE</button>
+                </div>
+            </div>
+
+            <!-- Find Out More -->
+            <div class="footer-col">
+                <h4>FIND OUT MORE</h4>
+                <ul>
+                   <li><a href="index.html">Home</a></li>
+                       <li><a href="blogs.html">Blogs</a></li>
+                    <li><a href="service.html">Service</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            </div>
+
+            <!-- Policies -->
+            <div class="footer-col">
+                <h4>POLICIES</h4>
+                <ul>
+                    <li><a href="policy.html">Privacy Policy</a></li>
+                    <li><a href="policy.html">Refund Policy</a></li>
+                    <li><a href="policy.html">Shipping Policy</a></li>
+                    <li><a href="policy.html">Terms of Service</a></li>
+                </ul>
+            </div>
+
+            <!-- Social -->
+            <div class="footer-col">
+                <h4>FOLLOW US</h4>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.webwatsapp.com/"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            © 2026 - .A Pakistan
+        </div>
+    </footer>
+
+    <div class="floating-social">
+        <a href="https://www.youtube.com/" class="social-icon youtube"><i class="fab fa-youtube"></i></a>
+        <a href="https://www.instagram.com/" class="social-icon instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/" class="social-icon linkedin"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://www.facebook.com/" class="social-icon facebook"><i class="fab fa-facebook-f"></i></a>
+    </div>
+
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        // Typing Animation Setup
+        var typed = new Typed('#typing-text', {
+            strings: ['SELLER', 'COLLECTION', 'PERFUMES'],
+            typeSpeed: 80,
+            backSpeed: 50,
+            loop: true,
+            cursorChar: '_',
+        });
+    </script>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
+
